@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ToDo Management Application</h1>
+        
+        <!-- Login Section -->
+        <div id="login">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+
+        <!-- Main Section (Visible after login) -->
+        <div id="main" class="hidden">
+            <div id="projectSection">
+                <h2>Projects</h2>
+                <ul id="projectList"></ul>
+                <button id="newProjectBtn">Create New Project</button>
+            </div>
+
+            <div id="todoSection" class="hidden">
+                <h2>Todos for <span id="projectTitle"></span></h2>
+                <ul id="todoList"></ul>
+
+                <div class="bottom-buttons">
+                    <input type="text" id="new-todo-description" placeholder="New todo description">
+                    <button id="add-todo-btn">Add Todo</button>
+                    <button id="back-to-projects-btn">Back to Projects</button>
+                    <button id="export-gist-btn">Export as Gist</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

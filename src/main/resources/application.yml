@@ -1,0 +1,5 @@
+spring:
+  security:
+    user:
+      name: Annukprince
+      password: 3d1e527e-47fd-4591-bab8-984b059b748e
